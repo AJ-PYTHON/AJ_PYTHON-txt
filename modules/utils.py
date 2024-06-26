@@ -67,7 +67,7 @@ def hrt(seconds, precision = 0):
 
 timer = Timer()
 
-# Powered By 𝐑𝐄 𝐄𝐍𝐕𝐎𝐘
+# Powered By 𝐀𝐉 𝐏𝐘𝐓𝐇𝐎𝐍
 async def progress_bar(current, total, reply, start):
     if timer.can_send():
         now = time.time()
@@ -93,7 +93,7 @@ async def progress_bar(current, total, reply, start):
             progress_bar = "◆" * completed_length + "◇" * remaining_length
             
             try:
-                await reply.edit(f'\n `╭─⌯══⟰ 𝐔𝐩𝐥𝐨𝐝𝐢𝐧𝐠 ⟰══⌯──★ \n├⚡ {progress_bar}|﹝{perc}﹞ \n├🚀 Speed » {sp} \n├📟 Processed » {cur}\n├🧲 Size - ETA » {tot} - {eta} \n`├𝐁𝐲 » 𝐑𝐄 𝐄𝐍𝐕𝐎𝐘\n╰─══ ✪ @RE_ENVOY ✪ ══─★\n') 
+                await reply.edit(f'\n `╭─⌯══⟰ 𝐔𝐩𝐥𝐨𝐝𝐢𝐧𝐠 ⟰══⌯──★ \n├⚡ {progress_bar}|﹝{perc}﹞ \n├🚀 Speed » {sp} \n├📟 Processed » {cur}\n├🧲 Size - ETA » {tot} - {eta} \n`├𝐁𝐲 » 𝐀𝐉 𝐏𝐘𝐓𝐇𝐎𝐍\n╰─══ ✪ @AJ_PYTHON_BOT ✪ ══─★\n') 
             except FloodWait as e:
                 time.sleep(e.x)
 
