@@ -5,7 +5,6 @@
     "colab": {
       "provenance": [],
       "gpuType": "V28",
-      "authorship_tag": "ABX9TyPun/egwAzYGAj/yQRgWbOJ",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -25,17 +24,33 @@
         "colab_type": "text"
       },
       "source": [
-        "<a href=\"https://colab.research.google.com/github/SudoR2spr/text-leech-bot/blob/main/AshutoshGoswami24\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+        "<a href=\"https://colab.research.google.com/github/AJ-PYTHON/AJ_PYTHON-txt/blob/main/.github/AshutoshGoswami24\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
       ]
     },
     {
       "cell_type": "code",
       "execution_count": null,
       "metadata": {
-        "cellView": "form",
-        "id": "oxfuLqKaD7V2"
+        "id": "oxfuLqKaD7V2",
+        "outputId": "cadca0d5-894b-49fb-f5db-522771728050",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
       },
-      "outputs": [],
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Running command: python3 modules/main.py ...\n",
+            "\n",
+            "█░█░█ █▀█ █▀█ █▀▄ █▀▀ █▀█ ▄▀█ █▀▀ ▀█▀     ▄▀█ █▀ █░█ █░█ ▀█▀ █▀█ █▀ █░█   ░ █▀▀\n",
+            "▀▄▀▄▀ █▄█ █▄█ █▄▀ █▄▄ █▀▄ █▀█ █▀░ ░█░     █▀█ ▄█ █▀█ █▄█ ░█░ █▄█ ▄█ █▀█   ▄ █▄█\n",
+            "✅ 𝐃𝐞𝐩𝐥𝐨𝐲 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 ✅\n",
+            "✅ 𝐁𝐨𝐭 𝐖𝐨𝐫𝐤𝐢𝐧𝐠 ✅\n"
+          ]
+        }
+      ],
       "source": [
         "import os\n",
         "import shutil\n",
@@ -47,7 +62,7 @@
         "\n",
         "\n",
         "#@markdown <font color=ORANGE>🔗 Please enter the GitHub repository URL: 🔗\n",
-        "GITHUB_URL = \"https://github.com/AJ-PYTHON/AJ_PYTHON-txt/tree/main/"  #@param {type:\"string\"}\n",
+        "GITHUB_URL = \"https://github.com/SudoR2spr/text-leech-bot\"  #@param {type:\"string\"}\n",
         "\n",
         "# Determine base directory based on environment\n",
         "base_dir = './repo'  # Save repo in ./repo directory relative to current directory\n",
@@ -102,19 +117,19 @@
         "\n",
         "#@markdown ### <font color=ORANGE>🔧 Environment Variables 🔧\n",
         "\n",
-	"#@markdown <center> <font color=green>✍️ Paste Your Telegram API ID From ≫ my.telegram.org <img src='https://i.ibb.co/BPnZ2xy/Telegram-Api.png' height=\"40\" /> </center> { display-mode: \"form\" }\n",
-	"\n",
-        "API_ID = \"\"  #@param {type:\"string\"}\n",
+        "#@markdown <center> <font color=green>✍️ Paste Your Telegram API ID From ≫ my.telegram.org <img src='https://i.ibb.co/BPnZ2xy/Telegram-Api.png' height=\"40\" /> </center> { display-mode: \"form\" }\n",
+        "\n",
+        "API_ID = \"29346149\"  #@param {type:\"string\"}\n",
         "os.environ['API_ID'] = API_ID\n",
         "\n",
-	"#@markdown <center> </font> <font color=green>✍️ Paste Your Telegram API HASH From ≫ my.telegram.org <img src='https://i.ibb.co/BPnZ2xy/Telegram-Api.png' height=\"40\" /> </center> { display-mode: \"form\" }\n",
-	"\n",
-        "API_HASH = \"\"  #@param {type:\"string\"}\n",
+        "#@markdown <center> </font> <font color=green>✍️ Paste Your Telegram API HASH From ≫ my.telegram.org <img src='https://i.ibb.co/BPnZ2xy/Telegram-Api.png' height=\"40\" /> </center> { display-mode: \"form\" }\n",
+        "\n",
+        "API_HASH = \"a738bcc3f955d3912b30cf2a6367527c\"  #@param {type:\"string\"}\n",
         "os.environ['API_HASH'] = API_HASH\n",
         "\n",
-	"#@markdown <center> </font> <font color=green>✍️ Paste Your Telegram BOT TOKEN From ≫ @BotFather <img src='https://i.ibb.co/Fw8McpS/Telegram-Bot-token.png' height=\"40\" /> </center> { display-mode: \"form\" }\n",
-	"\n",
-        "BOT_TOKEN = \"\"  #@param {type:\"string\"}\n",
+        "#@markdown <center> </font> <font color=green>✍️ Paste Your Telegram BOT TOKEN From ≫ @BotFather <img src='https://i.ibb.co/Fw8McpS/Telegram-Bot-token.png' height=\"40\" /> </center> { display-mode: \"form\" }\n",
+        "\n",
+        "BOT_TOKEN = \"8011486335:AAGyq7PHbJuQhWofDti7zSWsZQDP1UnT26I\"  #@param {type:\"string\"}\n",
         "os.environ['BOT_TOKEN'] = BOT_TOKEN\n",
         "\n",
         "clear_output()\n",
