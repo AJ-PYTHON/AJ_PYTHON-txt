@@ -1,0 +1,147 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "gpuType": "V28",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    },
+    "accelerator": "TPU"
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/AJ-PYTHON/AJ_PYTHON-txt/blob/main/.github/AshutoshGoswami24\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "oxfuLqKaD7V2",
+        "outputId": "cadca0d5-894b-49fb-f5db-522771728050",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        }
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Running command: python3 modules/main.py ...\n",
+            "\n",
+            "▄▀█ ░░█   █▀█ █▄█ ▀█▀ █░█ █▀█ █▄░█\n",
+            "█▀█ █▄█   █▀▀ ░█░ ░█░ █▀█ █▄█ █░▀█\n",
+            "✅ 𝐃𝐞𝐩𝐥𝐨𝐲 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 ✅\n",
+            "✅ 𝐁𝐨𝐭 𝐖𝐨𝐫𝐤𝐢𝐧𝐠 ✅\n"
+          ]
+        }
+      ],
+      "source": [
+        "import os\n",
+        "import shutil\n",
+        "from IPython.display import clear_output\n",
+        "\n",
+        "#@title <h1><B><font color=Black>AJ-𝗧𝗘𝗫𝗧-𝗕𝗢𝗧 <img src='https://graph.org/file/fcef46417863fedb5b468-e0fb5ae4b452b6efb1.jpg' height=\"40\" /> </center> { display-mode: \"form\" }\n",
+        "# @markdown <div><center><a href=\"https://t.me/Nobody_015"><img height=\"200\"  src=\"https://graph.org/file/a6841246925fd7ff0dc96-4b42cfa87d0b0b8330.jpg"></center></div>\n",
+        "# @markdown <br><center><h2><strong><font color=Yellow> AJ-𝗧𝗘𝗫𝗧-𝗕𝗢𝗧 </strong></h2></center>\n",
+        "\n",
+        "\n",
+        "#@markdown <font color=PINK>🔗 Please enter the GitHub repository URL: 🔗\n",
+        "GITHUB_URL = \"https://github.com/AJ-PYTHON/AJ_PYTHON-txt\"  #@param {type:\"string\"}\n",
+        "\n",
+        "# Determine base directory based on environment\n",
+        "base_dir = './repo'  # Save repo in ./repo directory relative to current directory\n",
+        "\n",
+        "# Function to clone or update the repository\n",
+        "def clone_or_update_repo(repo_url, base_directory):\n",
+        "    repo_name = os.path.basename(repo_url).replace('.git', '')\n",
+        "    project_dir = os.path.join(base_directory, repo_name)\n",
+        "\n",
+        "    # Check if the repository directory exists\n",
+        "    if os.path.exists(project_dir):\n",
+        "        print(f\"Deleting existing repository at: {project_dir} ...\")\n",
+        "        shutil.rmtree(project_dir)\n",
+        "        print(\"Deleted existing repository successfully!\")\n",
+        "\n",
+        "    # Clone the repository\n",
+        "    print(f\"Cloning repository from {repo_url}...\")\n",
+        "    clone_cmd = f\"git clone {repo_url} {project_dir}\"\n",
+        "    os.system(clone_cmd)\n",
+        "    print(\"Repository cloned successfully!\")\n",
+        "\n",
+        "    return project_dir\n",
+        "\n",
+        "# Clone or update the repository\n",
+        "project_dir = clone_or_update_repo(GITHUB_URL, base_dir)\n",
+        "\n",
+        "# Navigate to the project directory\n",
+        "print(f\"Entering project directory: {os.path.basename(project_dir)}...\")\n",
+        "os.chdir(project_dir)\n",
+        "print(\"Entered project directory successfully!\")\n",
+        "\n",
+        "clear_output()\n",
+        "\n",
+        "#@markdown <font color=PINK>🔧 Please enter the requirements.txt file path: 🔧\n",
+        "PIP_INSTALL = \"Installer\"  #@param {type:\"string\"}\n",
+        "\n",
+        "# Install required dependencies\n",
+        "print(\"Installing required dependencies...\")\n",
+        "!pip install -r {PIP_INSTALL}\n",
+        "print(\"All requirements installed successfully!\")\n",
+        "\n",
+        "clear_output()\n",
+        "\n",
+        "#@markdown <font color=PURPLE>🎥 Install FFMPEG? 🎥\n",
+        "install_ffmpeg = \"Yes\"  #@param [\"Yes\", \"No\"]\n",
+        "if install_ffmpeg == \"Yes\":\n",
+        "    print(\"Installing FFMPEG...\")\n",
+        "    os.system(\"apt-get install ffmpeg -qq\")  # Install ffmpeg quietly\n",
+        "    print(\"FFMPEG installed successfully!\")\n",
+        "else:\n",
+        "    print(\"Skipping FFMPEG installation.\")\n",
+        "\n",
+        "#@markdown ### <font color=ORANGE> Environment Variables \n",
+        "\n",
+        "#@markdown <center> <font color=Blue> Paste Your Telegram API ID </center> { display-mode: \"form\" }\n",
+        "\n",
+        "API_ID = \"29346149\"  #@param {type:\"string\"}\n",
+        "os.environ['API_ID'] = API_ID\n",
+        "\n",
+        "#@markdown <center> </font> <font color=Blue> Paste Your Telegram API HASH </center> { display-mode: \"form\" }\n",
+        "\n",
+        "API_HASH = \"a738bcc3f955d3912b30cf2a6367527c\"  #@param {type:\"string\"}\n",
+        "os.environ['API_HASH'] = API_HASH\n",
+        "\n",
+        "#@markdown <center> </font> <font color=Blue> Paste Your Telegram BOT TOKEN </center> { display-mode: \"form\" }\n",
+        "\n",
+        "BOT_TOKEN = \"8011486335:AAGyq7PHbJuQhWofDti7zSWsZQDP1UnT26I\"  #@param {type:\"string\"}\n",
+        "os.environ['BOT_TOKEN'] = BOT_TOKEN\n",
+        "\n",
+        "clear_output()\n",
+        "\n",
+        "#@markdown <font color=ORANGE> Please enter the Profile command: \n",
+        "RUN_COMMAND = \"python3 modules/main.py\"  #@param {type:\"string\"}\n",
+        "\n",
+        "# Run the bot\n",
+        "print(f\"Running command: {RUN_COMMAND} ...\")\n",
+        "!{RUN_COMMAND}\n",
+        "print(\"✔️ Execution completed!\")\n"
+      ]
+    }
+  ]
+}
